@@ -2,9 +2,9 @@ import os
 import secrets
 from PIL import Image
 from flask import render_template, url_for, flash, redirect, request
-from flaskblog import app, db, bcrypt, mail
-from flaskblog.forms import RegistrationForm, LoginForm, UpdateAccountForm, RequestResetForm, ResetPasswordForm
-from flaskblog.models import User
+from flasklogin import app, db, bcrypt, mail
+from flasklogin.forms import RegistrationForm, LoginForm, UpdateAccountForm, RequestResetForm, ResetPasswordForm
+from flasklogin.models import User
 from flask_login import login_user, current_user, logout_user, login_required
 from flask_mail import Message
 
